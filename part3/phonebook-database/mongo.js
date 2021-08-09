@@ -39,9 +39,10 @@ if(process.argv.length === 3) {
     mongoose.connection.close()
   })
 } else if(process.argv.length === 5) {
-    person.save().then(result => {
-      console.log(`added ${person.name} number ${person.number} to phonebook`)
-      mongoose.connection.close()
+  // eslint-disable-next-line no-unused-vars
+  person.save().then(result => {
+    console.log(`added ${person.name} number ${person.number} to phonebook`)
+    mongoose.connection.close()
   })
 } else if(process.argv.length > 5) {
   console.log('The maximum number of arguments is 5. If you trying to add a name with spaces use quotes.')

@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxhcyIsImlkIjoiNjBiZDBhMzZhNDZhODYxY2Y0NzE5ZjhmIiwiaWF0IjoxNjIzMDAzNjY4LCJleHAiOjE2MjMwMDcyNjh9.uNpEIYua_pLCBcyFkk7Zx2WlWdo7G1RVqXBcb5mLvA0
+
+{
+    "title": "Objects",
+    "author": "Michael Chan",
+    "url": "wwww.michaelchanwebsite.com",
+    "likes": 0,
+    "userId": "60bd0a36a46a861cf4719f8f"
+}
