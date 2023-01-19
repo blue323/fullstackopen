@@ -3,7 +3,6 @@ import './App.css';
 import Filter from './components/Filter'
 import Form from './components/Form';
 import Persons from './components/Persons';
-import axios from 'axios'
 import personsService from './services/persons'
 import Notification from './components/Notification'
 
@@ -16,7 +15,7 @@ const App = () => {
   /*const [errorMessage, setErrorMessage] = useState(null)*/
   const [ classNme, setClassNme] = useState('')
 
-  /*const hook = () => {
+ /* const hook = () => {
     axios
       .get('http://localhost:3001/persons')
       .then(response => {
@@ -108,7 +107,15 @@ const App = () => {
       personsService      
         .deletePrsn(id)      
         .then(() => {        
-          setPersons(persons.filter(person => person.id !== id))      
+          setPersons(persons.filter(person => person.id !== id))  
+          setMessage(          
+            `Removed ${person.name}`        
+          )
+          setClassNme('delete')        
+          setTimeout(() => {          
+              setMessage(null)
+              setClassNme('')        
+          }, 5000)    
       })
         .catch(() => {
           setMessage(          
