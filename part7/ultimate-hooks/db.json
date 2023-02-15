@@ -1,0 +1,29 @@
+{
+  "notes": [
+    {
+      "content": "custom-hooks are great",
+      "id": 1
+    },
+    {
+      "content": "another note",
+      "id": 2
+    }
+  ],
+  "persons": [
+    {
+      "name": "mluukkai",
+      "number": "040-5483923",
+      "id": 1
+    },
+    {
+      "name": "kaltson",
+      "number": "045-2323356",
+      "id": 2
+    },
+    {
+      "name": "alice",
+      "number": "046-2363456",
+      "id": 3
+    }
+  ]
+}
